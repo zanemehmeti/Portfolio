@@ -1,28 +1,96 @@
 <!DOCTYPE html>
+<!--index.html -->
+<!--
+  Zane Mehmeti Portfolio
+  HTML file for personal portfolio website.
+  Contains:
+    - Header with profile picture, name, and GitHub link
+    - About Me and Education section
+    - Projects section with collapsible project details
+    - Footer with contact info
+-->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Zane Mehmeti Portfolio</title>
+  <!-- Link to external CSS -->
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <!-- Link to external JS -->
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <!-- Header section with profile picture, name, and GitHub link -->
   <header>
-  	<h1>Zane Mehmeti<h1>
+    <img src="images/profile.jpg" alt="Zane Mehmeti" class="profile-pic">
+    <h1>Zane Mehmeti</h1>
+    <p>Computer Science & Data Science Student | Developer</p>
+    <p>
+      <!-- GitHub link opens in a new tab -->
+      <a href="https://github.com/zanemehmeti" target="_blank">GitHub Profile</a>
+    </p>
   </header>
 
+  <!-- About Me and Education section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a double major in <strong>Computer Science and Data Science</strong> at <strong>Augsburg University</strong>, currently in my <strong>Junior</strong> year.  
+      I enjoy building web applications, working on data science projects, and exploring creative coding solutions.
+    </p>
+  </section>
+  
+  <!-- Projects section -->
   <section id="projects">
     <h2>Projects</h2>
     <ul>
+      <!-- Project 1 -->
       <li>
-        <strong>Project 1</strong>
+        <strong>Ulta Beauty Gratis/Purchase Tracker</strong>
+        <!-- Button toggles the project details -->
+        <button onclick="toggleDetails(this)">Show Details</button>
+        <div class="project-details">
+          <ul>
+            <li>Built a web application to track employee gratis and purchases using client-side storage</li>
+            <li>Implemented a username-based login flow to scope data per user (no passwords)</li>
+            <li>Developed full CRUD functionality enabling efficient item tracking and updates across multiple product categories</li>
+            <li>Designed user-specific data handling logic using browser LocalStorage</li>
+            <li>Technologies: HTML, CSS, JavaScript, JSON, LocalStorage</li>
+          </ul>
+        </div>
+      </li>
+
+	  <!-- Project 2 -->
+      <li>
+        <strong>House Price Prediction (Python, Google Colab)</strong>
+        <button onclick="toggleDetails(this)">Show Details</button>
+        <div class="project-details">
+          <ul>
+            <li>Cleaned and preprocessed real estate data for predictive modeling</li>
+            <li>Performed feature engineering and explanatory analysis to improve model performance</li>
+            <li>Applied and evaluated basic machine learning algorithms for price prediction</li>
+            <li>Technologies: Python, Pandas, NumPy, Scikit-learn</li>
+          </ul>
+        </div>
+      </li>
+
+	  <!-- Project 3 -->
+      <li>
+        <strong>Personal Portfolio Website</strong>
+        <button onclick="toggleDetails(this)">Show Details</button>
+        <div class="project-details">
+          <ul>
+            <li>Built a responsive website showcasing projects, research, and skills</li>
+            <li>Added interactive features and GitHub project integration</li>
+            <li>Technologies: HTML, CSS, JavaScript</li>
+          </ul>
+        </div>
       </li>
     </ul>
   </section>
-  
+
+  <!-- Footer section with contact info -->
   <footer>
     <p>Contact: <a href="mailto:zanemehmeti321@gmail.com">zanemehmeti321@gmail.com</a></p>
   </footer>
 </body>
 </html>
-  

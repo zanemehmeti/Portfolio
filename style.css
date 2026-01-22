@@ -1,17 +1,131 @@
+/* style.css*/
+/*
+  Zane Mehmeti Portfolio CSS
+  Styles for the portfolio website, including:
+    - Body, header, footer, and section styling
+    - Profile picture styling
+    - Project card and button styles
+    - Responsive and hover effects
+*/
+
+
+/* Body styles */
 body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0 20px;
-	max-width: 800px;
-	margin-left: auto;
-	margin-right: auto;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-header, footer {
-	text-align: center;
-	margin: 20px 0;
+/* Footer styles */
+footer {
+  text-align: center;
+  margin: 20px 0;
 }
 
+/* Header styles: center content and stack vertically */
+header {
+  text-align: center;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column; /* stack items vertically */
+  align-items: center;    /* center everything horizontally */
+}
+
+/* Profile picture styles */
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;      /* circular image */
+  object-fit: cover;       /* cover the frame */
+  margin-bottom: 15px;     /* space below image */
+  border: 3px solid #0077cc;
+}
+
+/* Header name spacing */
 h1 {
-	margin-bottom: 5px;
+  margin-bottom: 5px;
 }
+
+/* Section titles with underline */
+h2 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+/* Remove default list styling */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Project card styles */
+li {
+  background-color: #fff;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+/* Slight lift effect on hover */
+li:hover {
+  transform: translateY(-3px);
+}
+
+/* Project details hidden by default */
+.project-details {
+  display: none;
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Nested lists in project details */
+.project-details ul {
+  margin: 5px 0 0 20px;
+  padding: 0;
+}
+
+/* Button styles for toggling details */
+button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #0077cc;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #005fa3;
+}
+
+/* Link styling in footer and header */
+footer a, header a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+footer a:hover, header a:hover {
+  text-decoration: underline;
+}
+/* Sections spacing */
+section {
+  margin: 30px 0;
+}
+
+/* About section paragraph styling */
+#about p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #444;
+}
+
