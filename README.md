@@ -25,7 +25,7 @@ I am a double major in **Computer Science and Data Science** at **Augsburg Unive
 - Technologies: HTML, CSS, JavaScript
 
 ## Live Portfolio
-You can view my portfolio live here: [Portfolio Link](https://zanemehmeti.github.io/portfolio/)
+You can view my portfolio live here: https://zanemehmeti.github.io/Portfolio/
 
 ## Contact
 Email: [zanemehmeti321@gmail.com](mailto:zanemehmeti321@gmail.com)  
